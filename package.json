@@ -1,11 +1,19 @@
 {
-  "name": "tercer-pre-entrega-nicolas-lemus",
+  "name": "proyectofinaldeprueba",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas-Lemus/Proyecto-de-prueba-final.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas-Lemus/Proyecto-de-prueba-final/issues"
+  },
+  "homepage": "https://github.com/Nicolas-Lemus/Proyecto-de-prueba-final#readme"
 }

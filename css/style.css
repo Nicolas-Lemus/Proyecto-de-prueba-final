@@ -314,23 +314,29 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   object-fit: cover;
 }
 .card h5 {
-  color: rgb(184, 165, 55);
-  background: rgb(122, 118, 118);
+  color: rgb(0, 0, 0);
+  background: rgba(227, 212, 98, 0.286);
   font-size: 1.5rem;
   border-radius: 3px;
 }
-.card p {
-  color: rgb(0, 0, 0);
+.card h6 {
   font-size: 1.2rem;
-  background: rgba(147, 145, 145, 0.149);
-  padding: 1rem;
+  background: rgba(200, 188, 188, 0.149);
+  color: rgb(0, 0, 0);
+}
+.card p {
+  font-size: 1rem;
+  font-size: 1.2rem;
+  background: rgba(200, 188, 188, 0.149);
+  color: rgb(0, 0, 0);
 }
 .card .card-body {
   background: rgb(255, 255, 255);
 }
 .card .text-muted {
-  background: rgb(255, 255, 255);
   color: rgb(0, 0, 0) !important;
+  padding: 0;
+  font-size: 1rem;
 }
 
 .card-group, .lanzamientos .card-productos {
@@ -360,9 +366,9 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   .card-group h5, .lanzamientos .card-productos h5 {
     font-size: 2rem;
   }
-  .card-group p, .lanzamientos .card-productos p {
-    padding: 2rem;
-    font-size: 1.5rem;
+  .card-group h6, .lanzamientos .card-productos h6, .card-group p, .lanzamientos .card-productos p {
+    padding: 1rem;
+    font-size: 1.3rem;
   }
 }
 
