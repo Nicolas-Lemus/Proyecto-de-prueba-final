@@ -1,0 +1,56 @@
+/*Colores*/
+$color-primario:rgb(184, 165, 55);
+$color-terciario:rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-enlaces:rgb(239, 239, 177);
+$color-encabezado:rgb(44, 44, 44);
+$color-hover:rgb(247, 243, 6);
+$color-grey:rgb(122, 118, 118);
+
+/*botones*/
+$btn-secundario: rgb(6, 173, 196);
+$btn-hover:rgb(116, 218, 231);
+
+/*Medidas en px*/
+$medida-ep:10px;
+$medida-epl:20px;
+$medida-sm:30px;
+$medida-md:50px;
+$medida-lg:80px;
+$medida-xl:130px;
+
+/*Medidas en rem*/
+$font-size-ep:0.5rem;
+$font-size-sm:1rem;
+$font-size-md:3rem;
+$font-size-lg:5rem;
+$font-size-xl:8rem;
+
+/*Medidas en %*/
+$max:100%;
+$min:0;
+
+/*Mixins*/
+/*sin parametros*/
+@mixin dispay-justify-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+/*con parametros*/
+@mixin wid-hei($ancho ,$largo){
+    width: $ancho;
+    height: $largo;
+}
+@mixin mar-pad($margen ,$relleno){
+    margin: $margen;
+    padding: $relleno;
+}
+/*medidas para pantallas*/
+$tablet:576px;
+$tabletXG:768px;
+$desktop:992px;
+$desktopXG:1200px;

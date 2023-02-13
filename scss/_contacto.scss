@@ -1,0 +1,119 @@
+.formulario{
+    max-width:$max;
+    width:$max - 12%;
+    text-align: center;
+    margin: auto;
+    margin-top:$medida-xl;
+    background:$color-terciario;
+    border-radius: 5px 80px 5px 80px;
+    background:rgba(128, 128, 128, 0.527);
+    h2{
+        justify-content: center;
+        font-size:2rem;
+        padding:$medida-sm;
+        color:$color-terciario;
+        display:inline-block;
+    }
+    label{
+        color: $color-terciario;
+        font-size: 1.3rem;
+    }
+    input ,textarea{
+        background:$color-white;
+        color:$color-terciario;
+        width:$max - 30%;
+        border-radius: 8px;
+    }
+    .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
+        font-size:1.2rem;
+        margin-top:$medida-md;
+        padding: auto;
+    }
+    #Enviar{
+        color:$color-white;
+        background:$btn-secundario;
+        font-size:$font-size-sm;
+        @include wid-hei(90px ,$medida-sm);
+        @include mar-pad($medida-md ,auto);
+
+        &:hover{
+            cursor: pointer;
+            color:$color-white;
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width:$tablet){
+        border-radius: 5px 150px 5px 150px;
+    }
+
+    @media (min-width:$desktop){
+        width: 70%;
+        font-size: $font-size-md;
+        border-radius: 5px 200px 5px 200px;
+        
+        .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
+        font-size: 1.3rem;
+        margin-top: 100px;
+        }
+        h2{
+            font-size: $font-size-md;
+        }
+        label{
+            font-size: 2rem;
+        }
+    }
+}
+.contactanos{
+    img{
+    display: block;
+    margin: auto;
+    width:$max;
+    border-radius: 15px;
+    }
+
+    h1{
+    padding-top:$medida-xl + $medida-md;
+    font-size:2.3rem;
+    @include dispay-justify-center;
+    margin-bottom:$medida-md;
+    background:$color-encabezado;
+    color: $color-primario;
+    }
+
+    h2{
+        text-align: center;
+        background: $color-encabezado;
+        font-size: $font-size-sm + .4rem;
+        padding:$medida-ep;
+    }
+    h3{
+        text-align: center;
+        background:$color-terciario;
+        padding: 5px;
+        font-size:$font-size-sm;
+    }
+    @media (min-width:$tablet){
+        img{
+            width: 550px; 
+        }
+        h1{
+            font-size: $font-size-md;
+        }
+        h2{
+            font-size:2rem;
+        }
+        h3{
+            font-size:$font-size-sm + $font-size-ep;
+        }
+    }
+
+    @media (min-width:$desktop) {
+        img{
+        width: 850px;
+        }
+        h1{
+            font-size:$font-size-lg;
+        }
+    }
+}

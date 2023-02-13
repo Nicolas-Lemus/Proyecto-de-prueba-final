@@ -1,0 +1,217 @@
+#scroll{
+    padding-top:90px;
+    margin:$min;
+    overflow: hidden;
+    @include wid-hei($max ,250px);
+
+    ul{
+        display:flex;
+        width:420%;
+        animation: cambio 20s infinite;
+        animation-direction: alternate;
+        padding-left:$min;
+    }
+    li{
+        list-style: none;
+        width:$max;
+    }
+    img{
+        background:$color-terciario;
+        @include wid-hei($max ,250px);
+    }
+    @keyframes cambio {
+        0% {margin-left:$min;}
+        20%{ margin-left:$min;}
+    
+        25%{margin-left: -$max;}
+        45%{margin-left: -$max + -10%;}
+    
+        50%{margin-left: -$max * 2;}
+        70%{margin-left: -$max * 2 + -10%;}
+    
+        75%{margin-left: -$max * 3;}
+        100%{margin-left: -$max * 3 + -20%;}
+    }
+
+    @media (min-width:$tablet){
+        padding-top: 100px;
+        height: 380px;
+
+        img{
+            height: 380px;
+        }
+    }
+
+    @media (min-width:$desktop){
+        height: 580px;
+
+        img{
+            height: 580px;
+        }
+    }
+}
+
+
+.encabezado{
+    padding-top:$medida-sm;
+    background-color:$color-terciario;
+    text-align: center;
+    width:$max;
+
+    h1{
+        padding-bottom:$medida-ep;
+        font-size:2.3rem;
+    }
+
+    h2{
+        font-size:$font-size-ep + $font-size-ep;
+        position: relative;
+        text-align: center;
+        width:$max;
+        color: $color-primario;
+        padding-bottom:$medida-ep;
+    }
+
+    @media(min-width:$tablet){
+        font-size:$font-size-lg;
+    }
+
+    @media (min-width:$desktop){
+        padding-top: 100px;
+            h1{
+                font-size:$font-size-xl;
+            }
+            h2{
+            font-size:$font-size-md;
+        }
+    }
+}
+    
+.degradado{
+    color:$color-enlaces;
+    background:linear-gradient($color-terciario, $color-primario , $color-terciario);
+    background-clip: text;
+    -moz-background-clip: text;
+}
+.noticias{ 
+    h2{
+        padding:calc($medida-ep / 2);
+        border-radius:calc($medida-ep / 2);
+        display: inline-block;
+        background:rgba(179, 176, 176, 0.769);
+        margin-left:$medida-epl;
+        font-size:$font-size-sm + 0.6rem;
+        em{
+            color: black;
+        }
+    }
+
+    @media (min-width:$desktop) {
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+.card{
+    background:$color-white;
+    text-align: center;
+    @include mar-pad(5px ,5px);
+    
+    &:hover{
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    img{ 
+        @include wid-hei($max ,300px);
+        border-radius:$medida-ep;
+        object-fit: cover;
+    }
+
+    h5{
+        color:$color-primario;
+        background:$color-grey;
+        font-size:$font-size-sm + .5rem;
+        border-radius:3px;
+    }
+
+    p{
+        color:$color-terciario;
+        font-size:$font-size-sm + .2rem;
+        background:rgba(147, 145, 145, 0.149);
+        padding:$font-size-sm;
+    }
+
+    .card-body{
+        background:$color-white;
+    }
+
+    .text-muted{
+        background:$color-white;
+        color:$color-terciario !important;
+    }
+}
+.card-group{
+    padding:$medida-ep;
+
+
+    @media(min-width:$tablet){
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:$font-size-sm;
+        }
+
+    @media (min-width:$desktop) {
+        gap:$medida-ep;
+        padding:100px $medida-md $min $medida-md;
+        h5{
+            font-size: 1.8rem;
+        }
+    }
+    @media (min-width:$desktopXG) {
+        grid-template-columns:repeat(3,1fr);
+        gap: $medida-sm;
+        h5{
+            font-size: 2rem;
+        }
+        p{
+            padding: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.lanzamientos{
+    @extend .noticias;
+        padding-top:$medida-xl;
+
+    .card-productos{
+        @extend .card-group;
+    }
+        @media (min-width:$tablet) {
+            h5{
+                font-size: 1zrem;
+            }
+        }
+        @media (min-width:$desktop) {
+            grid-template-columns: repeat(2,1fr);
+            h5{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size:$font-size-sm;
+            }
+        }
+        img{
+            border-radius:$medida-ep;
+            object-fit: contain;
+        }
+
+        @media (min-width:$desktopXG) {
+            grid-template-columns: repeat(3,1fr);
+
+            h5{
+                font-size: 1.8rem;
+            }
+        }
+}
