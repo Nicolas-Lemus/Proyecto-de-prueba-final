@@ -647,6 +647,9 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 
+.title__informacion p {
+  margin-top: 80px;
+}
 .title__informacion p:nth-child(even) {
   background-color: rgb(122, 118, 118);
   color: rgb(0, 0, 0);
