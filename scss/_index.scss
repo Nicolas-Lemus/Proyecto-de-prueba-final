@@ -43,10 +43,10 @@
     }
 
     @media (min-width:$desktop){
-        height: 580px;
+        height: 600px;
 
         img{
-            height: 580px;
+            height: 600px;
         }
     }
 }
@@ -130,8 +130,8 @@
 
     h5{
         color:$color-terciario;
-        background:rgba(227, 212, 98, 0.286);
-        font-size:$font-size-sm + .5rem;
+        background:rgba(220, 204, 81, 0.754);
+        font-size:$font-size-sm + $font-size-ep;
         border-radius:3px;
     }
     h6{

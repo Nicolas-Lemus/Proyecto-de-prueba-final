@@ -6,17 +6,23 @@
     margin-top:$medida-xl;
     background:$color-terciario;
     border-radius: 5px 80px 5px 80px;
-    background:rgba(128, 128, 128, 0.527);
+    background:url(../multimedia/Imagenes/image-fondo.webp);
     h2{
         justify-content: center;
         font-size:2rem;
-        padding:$medida-sm;
+        padding:$medida-epl;
         color:$color-terciario;
         display:inline-block;
+        background:rgba(179, 176, 176, 0.769);
+        border-radius:$medida-ep;
+        margin-top: 2rem;
     }
     label{
         color: $color-terciario;
         font-size: 1.3rem;
+        background:rgba(179, 176, 176, 0.769);
+        border-radius:5px;
+        padding: 0 .4rem;
     }
     input ,textarea{
         background:$color-white;
@@ -83,7 +89,7 @@
 
     h2{
         text-align: center;
-        background: $color-encabezado;
+        background:$color-encabezado;
         font-size: $font-size-sm + .4rem;
         padding:$medida-ep;
     }
