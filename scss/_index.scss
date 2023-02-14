@@ -7,7 +7,7 @@
     ul{
         display:flex;
         width:420%;
-        animation: cambio 20s infinite;
+        animation: cambio 18s infinite;
         animation-direction: alternate;
         padding-left:$min;
     }
@@ -25,12 +25,12 @@
     
         25%{margin-left: -$max;}
         45%{margin-left: -$max + -10%;}
-    
+        
         50%{margin-left: -$max * 2;}
         70%{margin-left: -$max * 2 + -10%;}
     
         75%{margin-left: -$max * 3;}
-        100%{margin-left: -$max * 3 + -20%;}
+        100%{margin-left: -$max * 3 + -10%;}
     }
 
     @media (min-width:$tablet){

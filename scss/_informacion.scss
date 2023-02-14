@@ -1,9 +1,6 @@
 .title__informacion{
     @extend .title__galeria;
-    p{
-        margin-top: 80px;
-    }
-
+        
     p:nth-child(even){
         background-color:$color-grey;
         color:$color-terciario;

@@ -9,8 +9,8 @@
     background:url(../multimedia/Imagenes/image-fondo.webp);
     h2{
         justify-content: center;
-        font-size:2rem;
-        padding:$medida-epl;
+        font-size:1.5rem;
+        padding:$medida-ep;
         color:$color-terciario;
         display:inline-block;
         background:rgba(179, 176, 176, 0.769);
@@ -18,16 +18,14 @@
         margin-top: 2rem;
     }
     label{
-        color: $color-terciario;
-        font-size: 1.3rem;
-        background:rgba(179, 176, 176, 0.769);
-        border-radius:5px;
-        padding: 0 .4rem;
+        color: $color-white;
+        font-size: 1rem;
+        margin: 1rem;
     }
     input ,textarea{
         background:$color-white;
         color:$color-terciario;
-        width:$max - 30%;
+        width:50%;
         border-radius: 8px;
     }
     .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
@@ -51,10 +49,13 @@
 
     @media (min-width:$tablet){
         border-radius: 5px 150px 5px 150px;
+    
+    input,textarea{
+        width: 40%;
     }
-
+}
     @media (min-width:$desktop){
-        width: 70%;
+        width:900px;
         font-size: $font-size-md;
         border-radius: 5px 200px 5px 200px;
         
@@ -63,27 +64,29 @@
         margin-top: 100px;
         }
         h2{
-            font-size: $font-size-md;
+            font-size:2.2rem;
         }
         label{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 }
+
 .contactanos{
     img{
     display: block;
     margin: auto;
     width:$max;
     border-radius: 15px;
+    max-width: 100%;
+    max-height: 500px;
     }
 
     h1{
     padding-top:$medida-xl;
     font-size:2.3rem;
     @include dispay-justify-center;
-    margin-bottom:$medida-md;
-    background:$color-encabezado;
+    margin-bottom: 0;
     color: $color-primario;
     }
 
@@ -100,9 +103,6 @@
         font-size:$font-size-sm;
     }
     @media (min-width:$tablet){
-        img{
-            width: 550px; 
-        }
         h1{
             font-size: $font-size-md;
         }
@@ -115,11 +115,11 @@
     }
 
     @media (min-width:$desktop) {
-        img{
-        width: 850px;
-        }
         h1{
-            font-size:$font-size-lg;
+            font-size:$font-size-xl;
+        }
+        img{
+            width: 90%;
         }
     }
 }

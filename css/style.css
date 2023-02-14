@@ -181,7 +181,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 #scroll ul {
   display: flex;
   width: 420%;
-  animation: cambio 20s infinite;
+  animation: cambio 18s infinite;
   animation-direction: alternate;
   padding-left: 0;
 }
@@ -217,7 +217,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     margin-left: -300%;
   }
   100% {
-    margin-left: -320%;
+    margin-left: -310%;
   }
 }
 @media (min-width: 576px) {
@@ -413,19 +413,18 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   justify-content: center;
   font-size: 3rem;
   padding-top: 130px;
-  background: rgb(44, 44, 44);
   text-align: center;
+  margin-bottom: 0;
 }
 .title__galeria h2, .title__informacion h2, .title__palmares h2 {
   background: rgb(44, 44, 44);
-  margin: 50px 0;
+  margin: 50px 30px;
   display: flex;
   justify-content: center;
   padding: 10px;
   text-align: center;
 }
 .title__galeria p, .title__informacion p, .title__palmares p {
-  font-family: monospace;
   padding: auto;
   background: rgb(44, 44, 44);
   font-size: 1rem;
@@ -433,6 +432,14 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin: 15px;
   padding: 15px;
   text-align: center;
+  margin-top: 80px;
+}
+.title__galeria img, .title__informacion img, .title__palmares img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 15px;
 }
 @media (min-width: 576px) {
   .title__galeria, .title__informacion, .title__palmares {
@@ -534,8 +541,8 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .formulario h2 {
   justify-content: center;
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
   color: rgb(0, 0, 0);
   display: inline-block;
   background: rgba(179, 176, 176, 0.769);
@@ -543,16 +550,14 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin-top: 2rem;
 }
 .formulario label {
-  color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  background: rgba(179, 176, 176, 0.769);
-  border-radius: 5px;
-  padding: 0 0.4rem;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin: 1rem;
 }
 .formulario input, .formulario textarea {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  width: 70%;
+  width: 50%;
   border-radius: 8px;
 }
 .formulario .formulario__correo, .formulario .formulario__nombre, .formulario .formulario__mensaje {
@@ -578,10 +583,13 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   .formulario {
     border-radius: 5px 150px 5px 150px;
   }
+  .formulario input, .formulario textarea {
+    width: 40%;
+  }
 }
 @media (min-width: 992px) {
   .formulario {
-    width: 70%;
+    width: 900px;
     font-size: 3rem;
     border-radius: 5px 200px 5px 200px;
   }
@@ -590,10 +598,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     margin-top: 100px;
   }
   .formulario h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
   .formulario label {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -602,14 +610,15 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin: auto;
   width: 100%;
   border-radius: 15px;
+  max-width: 100%;
+  max-height: 500px;
 }
 .contactanos h1 {
   padding-top: 130px;
   font-size: 2.3rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  background: rgb(44, 44, 44);
+  margin-bottom: 0;
   color: rgb(184, 165, 55);
 }
 .contactanos h2 {
@@ -625,9 +634,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   font-size: 1rem;
 }
 @media (min-width: 576px) {
-  .contactanos img {
-    width: 550px;
-  }
   .contactanos h1 {
     font-size: 3rem;
   }
@@ -639,18 +645,15 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 @media (min-width: 992px) {
-  .contactanos img {
-    width: 850px;
-  }
   .contactanos h1 {
-    font-size: 5rem;
+    font-size: 8rem;
+  }
+  .contactanos img {
+    width: 90%;
   }
 }
 
-.title__informacion p {
-  margin-top: 80px;
-}
-.title__informacion p:nth-child(even) {
+.title__informacion p:nth-child(even), .title__palmares p:nth-child(even) {
   background-color: rgb(122, 118, 118);
   color: rgb(0, 0, 0);
 }
