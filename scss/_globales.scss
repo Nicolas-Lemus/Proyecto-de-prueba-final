@@ -93,12 +93,10 @@ header{
 #footer{
     width:$max;
     text-align: center;
-    background:$color-encabezado;
-    background:linear-gradient($color-primario ,$color-terciario);
+    background:linear-gradient(rgba(108, 108, 108, 0.564),$color-terciario);
 
     h2{
-        background:$color-primario;
-        margin:$medida-sm;
+        background:rgba(135, 129, 108, 0.339);
         color:$color-terciario;
         font-size:$font-size-sm + .3rem;
     }
@@ -134,7 +132,7 @@ header{
     p{
         font-size: .8rem;
         color:$color-white;
-        margin:4px;
+        margin:$min;
     }
 
     @media (min-width:$tablet){
@@ -153,6 +151,7 @@ header{
 
         h2{
             font-size: 2.2rem;
+            margin: 2rem;
         }
         img{
                 width:$medida-md;

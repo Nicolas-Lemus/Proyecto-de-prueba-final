@@ -101,12 +101,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 #footer {
   width: 100%;
   text-align: center;
-  background: rgb(44, 44, 44);
-  background: linear-gradient(rgb(184, 165, 55), rgb(0, 0, 0));
+  background: linear-gradient(rgba(108, 108, 108, 0.564), rgb(0, 0, 0));
 }
 #footer h2 {
-  background: rgb(184, 165, 55);
-  margin: 30px;
+  background: rgba(135, 129, 108, 0.339);
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
 }
@@ -140,7 +138,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 #footer p {
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
-  margin: 4px;
+  margin: 0;
 }
 @media (min-width: 576px) {
   #footer h2 {
@@ -156,6 +154,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
   #footer h2 {
     font-size: 2.2rem;
+    margin: 2rem;
   }
   #footer img {
     width: 50px;
@@ -172,15 +171,14 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 
 #scroll {
-  padding-top: 90px;
   margin: 0;
   overflow: hidden;
   width: 100%;
-  height: 250px;
+  height: 180px;
 }
 #scroll ul {
   display: flex;
-  width: 420%;
+  width: 410%;
   animation: cambio 18s infinite;
   animation-direction: alternate;
   padding-left: 0;
@@ -192,7 +190,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 #scroll img {
   background: rgb(0, 0, 0);
   width: 100%;
-  height: 250px;
+  height: 180px;
 }
 @keyframes cambio {
   0% {
@@ -222,11 +220,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 @media (min-width: 576px) {
   #scroll {
-    padding-top: 100px;
-    height: 380px;
+    height: 320px;
   }
   #scroll img {
-    height: 380px;
+    height: 320px;
   }
 }
 @media (min-width: 992px) {
@@ -237,15 +234,23 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     height: 600px;
   }
 }
+@media (min-width: 1200px) {
+  #scroll {
+    height: 700px;
+  }
+  #scroll img {
+    height: 700px;
+  }
+}
 
 .encabezado {
-  padding-top: 30px;
+  padding-top: 100px;
   background-color: rgb(0, 0, 0);
   text-align: center;
   width: 100%;
 }
 .encabezado h1 {
-  padding-bottom: 10px;
+  padding: 10px;
   font-size: 2.3rem;
 }
 .encabezado h2 {
@@ -281,12 +286,12 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 
 .noticias h2, .lanzamientos h2 {
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   display: inline-block;
-  background: rgba(179, 176, 176, 0.769);
-  margin-left: 20px;
-  font-size: 1.6rem;
+  background: rgba(179, 176, 176, 0.48);
+  margin-left: 10px;
+  font-size: 1.7rem;
 }
 .noticias h2 em, .lanzamientos h2 em {
   color: black;
@@ -375,11 +380,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 .lanzamientos {
   padding-top: 130px;
 }
-@media (min-width: 576px) {
-  .lanzamientos h5 {
-    font-size: 1zrem;
-  }
-}
 @media (min-width: 992px) {
   .lanzamientos {
     grid-template-columns: repeat(2, 1fr);
@@ -409,20 +409,17 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   flex-direction: column;
 }
 .title__galeria h1, .title__informacion h1, .title__palmares h1 {
-  display: flex;
-  justify-content: center;
   font-size: 3rem;
   padding-top: 130px;
   text-align: center;
   margin-bottom: 0;
 }
 .title__galeria h2, .title__informacion h2, .title__palmares h2 {
-  background: rgb(44, 44, 44);
-  margin: 50px 30px;
-  display: flex;
-  justify-content: center;
+  background: rgba(5, 5, 5, 0.173);
+  margin: 30px;
   padding: 10px;
   text-align: center;
+  color: rgba(217, 216, 204, 0.995);
 }
 .title__galeria p, .title__informacion p, .title__palmares p {
   padding: auto;
@@ -536,18 +533,18 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin: auto;
   margin-top: 130px;
   background: rgb(0, 0, 0);
-  border-radius: 5px 80px 5px 80px;
+  border-radius: 5px 80px;
   background: url(../multimedia/Imagenes/image-fondo.webp);
 }
 .formulario h2 {
   justify-content: center;
-  font-size: 1.5rem;
-  padding: 10px;
-  color: rgb(0, 0, 0);
+  font-size: 1.9rem;
+  padding: 30px;
+  color: rgb(184, 165, 55);
   display: inline-block;
-  background: rgba(179, 176, 176, 0.769);
-  border-radius: 10px;
+  border-radius: 5px 70px 1px 70px;
   margin-top: 2rem;
+  background: rgba(113, 111, 111, 0.402);
 }
 .formulario label {
   color: rgb(255, 255, 255);
@@ -558,47 +555,54 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   width: 50%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .formulario .formulario__correo, .formulario .formulario__nombre, .formulario .formulario__mensaje {
   font-size: 1.2rem;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: auto;
 }
 .formulario #Enviar {
+  background: rgb(184, 165, 55);
   color: rgb(255, 255, 255);
-  background: rgb(6, 173, 196);
-  font-size: 1rem;
+  font-size: 1.3rem;
   width: 90px;
   height: 30px;
-  margin: 50px;
+  margin: 30px;
   padding: auto;
+  border-color: rgb(255, 255, 255);
 }
 .formulario #Enviar:hover {
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(122, 118, 118);
   font-weight: 700;
+  background: rgb(235, 242, 54);
+  transition: 0.5s;
 }
 @media (min-width: 576px) {
   .formulario {
-    border-radius: 5px 150px 5px 150px;
+    border-radius: 5px 150px;
   }
   .formulario input, .formulario textarea {
     width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .formulario h2 {
+    font-size: 3rem;
   }
 }
 @media (min-width: 992px) {
   .formulario {
     width: 900px;
     font-size: 3rem;
-    border-radius: 5px 200px 5px 200px;
+    border-radius: 5px 200px;
   }
   .formulario .formulario__correo, .formulario .formulario__nombre, .formulario .formulario__mensaje {
     font-size: 1.3rem;
-    margin-top: 100px;
   }
   .formulario h2 {
-    font-size: 2.2rem;
+    font-size: 4rem;
   }
   .formulario label {
     font-size: 1.5rem;
@@ -615,7 +619,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .contactanos h1 {
   padding-top: 130px;
-  font-size: 2.3rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
@@ -623,13 +627,13 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .contactanos h2 {
   text-align: center;
-  background: rgb(44, 44, 44);
+  background: rgba(5, 5, 5, 0.173);
   font-size: 1.4rem;
   padding: 10px;
 }
 .contactanos h3 {
   text-align: center;
-  background: rgb(0, 0, 0);
+  background: rgba(5, 5, 5, 0.173);
   padding: 5px;
   font-size: 1rem;
 }
@@ -648,8 +652,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   .contactanos h1 {
     font-size: 8rem;
   }
+}
+@media (min-width: 1200px) {
   .contactanos img {
-    width: 90%;
+    width: 85%;
   }
 }
 

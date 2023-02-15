@@ -5,69 +5,76 @@
     margin: auto;
     margin-top:$medida-xl;
     background:$color-terciario;
-    border-radius: 5px 80px 5px 80px;
+    border-radius: 5px $medida-lg;
     background:url(../multimedia/Imagenes/image-fondo.webp);
     h2{
         justify-content: center;
-        font-size:1.5rem;
-        padding:$medida-ep;
-        color:$color-terciario;
+        font-size:1.9rem;
+        padding:$medida-sm;
+        color:$color-primario;
         display:inline-block;
-        background:rgba(179, 176, 176, 0.769);
-        border-radius:$medida-ep;
+        border-radius:5px 70px 1px 70px;
         margin-top: 2rem;
+        background: rgba(113, 111, 111, 0.402);
     }
     label{
         color: $color-white;
-        font-size: 1rem;
-        margin: 1rem;
+        font-size: $font-size-sm;
+        margin: $font-size-sm;
     }
     input ,textarea{
         background:$color-white;
         color:$color-terciario;
         width:50%;
-        border-radius: 8px;
+        border-radius:$medida-ep;
     }
     .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
         font-size:1.2rem;
-        margin-top:$medida-md;
+        margin-top:$medida-epl;
         padding: auto;
     }
     #Enviar{
+        background:$color-primario;
         color:$color-white;
-        background:$btn-secundario;
-        font-size:$font-size-sm;
+        font-size:$font-size-sm + .3rem;
         @include wid-hei(90px ,$medida-sm);
-        @include mar-pad($medida-md ,auto);
+        @include mar-pad($medida-sm ,auto);
+        border-color:$color-white;
 
         &:hover{
             cursor: pointer;
-            color:$color-white;
+            color:$color-grey;
             font-weight: 700;
+            background:$btn-hover;
+            transition: .5s;
         }
     }
 
     @media (min-width:$tablet){
-        border-radius: 5px 150px 5px 150px;
+        border-radius: 5px 150px;
     
     input,textarea{
         width: 40%;
     }
 }
+@media (min-width:$tabletXG) {
+    h2{
+        font-size:$font-size-md;
+    }
+}
     @media (min-width:$desktop){
         width:900px;
         font-size: $font-size-md;
-        border-radius: 5px 200px 5px 200px;
+        border-radius: 5px 200px;
         
         .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
-        font-size: 1.3rem;
-        margin-top: 100px;
+            font-size: 1.3rem;
         }
         h2{
-            font-size:2.2rem;
+            font-size:$font-size-sm + $font-size-md;
         }
         label{
-            font-size: 1.5rem;
+            font-size:$font-size-sm + $font-size-ep;
         }
     }
 }
@@ -78,13 +85,13 @@
     margin: auto;
     width:$max;
     border-radius: 15px;
-    max-width: 100%;
+    max-width:$max;
     max-height: 500px;
     }
 
     h1{
     padding-top:$medida-xl;
-    font-size:2.3rem;
+    font-size:$font-size-md;
     @include dispay-justify-center;
     margin-bottom: 0;
     color: $color-primario;
@@ -92,13 +99,13 @@
 
     h2{
         text-align: center;
-        background:$color-encabezado;
+        background:rgba(5, 5, 5, 0.173);
         font-size: $font-size-sm + .4rem;
         padding:$medida-ep;
     }
     h3{
         text-align: center;
-        background:$color-terciario;
+        background:rgba(5, 5, 5, 0.173);
         padding: 5px;
         font-size:$font-size-sm;
     }
@@ -118,8 +125,12 @@
         h1{
             font-size:$font-size-xl;
         }
+    }
+
+    @media (min-width:$desktopXG) {
+    
         img{
-            width: 90%;
+            width: 85%;
         }
     }
 }

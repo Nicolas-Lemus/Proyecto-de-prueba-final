@@ -1,8 +1,7 @@
 .title__galeria {
     @include flex-column;
-
+    
     h1{
-    @include dispay-justify-center;
     font-size:$font-size-md;
     padding-top:$medida-xl;
     text-align: center;
@@ -10,11 +9,11 @@
     }
 
     h2{
-        background:$color-encabezado;
-        margin:$medida-md $medida-sm;
-        @include dispay-justify-center;
+        background:rgba(5, 5, 5, 0.173);
+        margin:$medida-sm;
         padding:$medida-ep;
         text-align: center;
+        color: rgba(217, 216, 204, 0.995);
     }
     p{
         padding: auto;
@@ -86,7 +85,7 @@
 
     @media (min-width:$desktop) {
         grid-template-columns: repeat(3,1fr);
-        gap: 20px;
+        gap: $medida-epl;
     }
 }
 

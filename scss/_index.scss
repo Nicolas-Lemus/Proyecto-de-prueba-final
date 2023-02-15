@@ -1,12 +1,11 @@
 #scroll{
-    padding-top:90px;
     margin:$min;
     overflow: hidden;
-    @include wid-hei($max ,250px);
+    @include wid-hei($max ,180px);
 
     ul{
         display:flex;
-        width:420%;
+        width:410%;
         animation: cambio 18s infinite;
         animation-direction: alternate;
         padding-left:$min;
@@ -17,7 +16,7 @@
     }
     img{
         background:$color-terciario;
-        @include wid-hei($max ,250px);
+        @include wid-hei($max ,180px);
     }
     @keyframes cambio {
         0% {margin-left:$min;}
@@ -34,14 +33,12 @@
     }
 
     @media (min-width:$tablet){
-        padding-top: 100px;
-        height: 380px;
+        height: 320px;
 
         img{
-            height: 380px;
+            height: 320px;
         }
     }
-
     @media (min-width:$desktop){
         height: 600px;
 
@@ -49,17 +46,23 @@
             height: 600px;
         }
     }
+    @media (min-width:$desktopXG) {
+        height:700px;
+        img{
+            height:700px;
+        }
+    }
 }
 
 
 .encabezado{
-    padding-top:$medida-sm;
+    padding-top:$medida-lg + $medida-epl;
     background-color:$color-terciario;
     text-align: center;
     width:$max;
 
     h1{
-        padding-bottom:$medida-ep;
+        padding:$medida-ep;
         font-size:2.3rem;
     }
 
@@ -95,12 +98,12 @@
 }
 .noticias{ 
     h2{
-        padding:calc($medida-ep / 2);
-        border-radius:calc($medida-ep / 2);
+        padding:$medida-ep;
+        border-radius:$medida-ep;
         display: inline-block;
-        background:rgba(179, 176, 176, 0.769);
-        margin-left:$medida-epl;
-        font-size:$font-size-sm + 0.6rem;
+        background:rgba(179, 176, 176, 0.48);
+        margin-left:$medida-ep;
+        font-size:$font-size-sm + 0.7rem;
         em{
             color: black;
         }
@@ -153,7 +156,7 @@
     .text-muted{
         color:$color-terciario !important;
         padding: 0;
-        font-size: 1rem;
+        font-size:$font-size-sm;
     }
 }
 .card-group{
@@ -180,7 +183,7 @@
             font-size: 2rem;
         }
         h6 ,p{
-            padding: 1rem;
+            padding:$font-size-sm;
             font-size: 1.3rem;
         }
     }
@@ -193,11 +196,7 @@
     .card-productos{
         @extend .card-group;
     }
-        @media (min-width:$tablet) {
-            h5{
-                font-size: 1zrem;
-            }
-        }
+
         @media (min-width:$desktop) {
             grid-template-columns: repeat(2,1fr);
             h5{
