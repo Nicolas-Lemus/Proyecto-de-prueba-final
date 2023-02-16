@@ -1,6 +1,5 @@
 /*Colores*/
 /*Colores rgba*/
-/*Botones*/
 /*Medidas en px*/
 /*Medidas en rem*/
 /*Medidas en %*/
@@ -318,7 +317,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 
 .noticias h2, .lanzamientos h2 {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
   background: rgba(229, 223, 223, 0.405);
   margin-left: 10px;
@@ -618,31 +617,26 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   text-align: center;
   margin: auto;
   margin-top: 130px;
-  background: rgb(0, 0, 0);
-  border-radius: 5px 80px;
-  background: url(../multimedia/Imagenes/image-fondo.webp);
-}
-@media (min-width: 576px) {
-  .formulario {
-    border-radius: 5px 150px;
-  }
+  border: solid 6px rgb(0, 0, 0);
+  background: rgba(229, 229, 203, 0.799);
+  border-radius: 10px;
 }
 @media (min-width: 992px) {
   .formulario {
     width: 900px;
     font-size: 3rem;
-    border-radius: 5px 200px;
   }
 }
 .formulario h2 {
-  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.9rem;
-  padding: 30px;
+  padding: 20px;
   color: rgb(184, 165, 55);
   display: inline-block;
-  border-radius: 5px 70px 1px 70px;
+  border: solid 3px rgb(146, 127, 18);
   margin-top: 2rem;
-  background: rgba(113, 111, 111, 0.402);
+  background: rgb(0, 0, 0);
+  border-radius: 15px;
 }
 @media (min-width: 576px) {
   .formulario h2 {
@@ -655,12 +649,14 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 .formulario label {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   margin: 1rem;
+  text-decoration: underline;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .formulario label {
+    margin: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -668,7 +664,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   width: 50%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 @media (min-width: 576px) {
   .formulario input, .formulario textarea {
@@ -686,9 +682,9 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 .formulario #Enviar {
-  background: rgba(20, 187, 225, 0.799);
+  background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   width: 90px;
   height: auto;
   margin: 30px;
@@ -698,9 +694,11 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 .formulario #Enviar:hover {
   cursor: pointer;
   font-weight: 700;
-  background: rgb(0, 247, 255);
+  background: rgb(122, 118, 118);
   transition: 0.5s;
   width: 95px;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
 }
 
 .contactanos img {

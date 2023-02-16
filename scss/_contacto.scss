@@ -32,36 +32,33 @@
         }
     } 
 }
-
 .formulario{
         max-width:$max;
         width:$max - 12%;
         text-align: center;
         margin: auto;
         margin-top:$medida-xl;
-        background:$color-terciario;
-        border-radius:$medida-xxp $medida-lg;
-        background:url(../multimedia/Imagenes/image-fondo.webp);
-
-        @media (min-width:$tablet){
-            border-radius: $medida-xxp 150px;
-        }
+        border: solid 6px $color-terciario;
+        background: $color-enlaces;
+        border-radius:$medida-ep;
+        
 
         @media (min-width:$desktop){
             width:900px;
             font-size: $font-size-md;
-            border-radius: $medida-xxp 200px;
         }
 
     h2{
-        justify-content: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size:1.9rem;
-        padding:$medida-sm;
+        padding:$medida-epl;
         color:$color-primario;
         display:inline-block;
-        border-radius:$medida-xxp 70px 1px 70px;
+        border: solid 3px rgb(146, 127, 18);
         margin-top: $font-size-sml;
-        background: rgba(113, 111, 111, 0.402);
+        background: $color-terciario;
+        border-radius: 15px;
+
 
         @media (min-width:$tablet){
             font-size:$font-size-md;
@@ -73,12 +70,14 @@
     }
 
     label{
-        color: $color-white;
+        color: $color-terciario;
         font-size: $font-size-sm;
         margin: $font-size-sm;
+        text-decoration: underline;
 
-        @media (min-width:$tabletXG){
-            font-size:$font-size-sm + $font-size-ep;
+        @media (min-width:$tablet){
+            margin:$font-size-md;
+            font-size: $font-size-sm + $font-size-ep;
         }
     }
 
@@ -86,7 +85,7 @@
         background:$color-white;
         color:$color-terciario;
         width:50%;
-        border-radius:$medida-ep;
+        border-radius:$medida-xxp;
 
         @media (min-width:$tablet){
             width: 40%;
@@ -102,9 +101,9 @@
         }
     }
     #Enviar{
-        background:rgba(20, 187, 225, 0.799);
+        background:$color-terciario;
         color:$color-white;
-        font-size:$font-size-sm + .3rem;
+        font-size:$font-size-sm + $font-size-ep;
         @include wid-hei(90px ,auto);
         @include mar-pad($medida-sm ,auto);
         border-color:$color-white;
@@ -112,9 +111,11 @@
             &:hover{
                 cursor: pointer;
                 font-weight: 700;
-                background:rgb(0, 247, 255);
+                background:$color-grey;
                 transition: .5s;
                 width: 95px;
+                color:$color-terciario;
+                border-color: $color-terciario;
             }
     }
 }
