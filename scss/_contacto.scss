@@ -1,136 +1,172 @@
+.accordion{
+
+    .accordion-button{
+        background: $color-enlaces;
+        color: $color-terciario;
+        font-size: 1.3rem;
+
+        &:hover{
+            z-index:$min;
+        }
+    }
+    .accordion-body{
+        h4{
+            color:$color-terciario;
+            font-size: 1.1rem;
+            overflow: hidden;
+            padding: .3rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            @media (min-width:$desktop){
+                font-size:$font-size-sml;
+            }
+        }
+        p{
+            color:$color-encabezado;
+            background: $color-rgba-grey;
+            padding: .4rem;
+
+            @media (min-width:$desktop){
+                font-size: 1.3rem;
+            }
+        }
+    } 
+}
+
 .formulario{
-    max-width:$max;
-    width:$max - 12%;
-    text-align: center;
-    margin: auto;
-    margin-top:$medida-xl;
-    background:$color-terciario;
-    border-radius: 5px $medida-lg;
-    background:url(../multimedia/Imagenes/image-fondo.webp);
+        max-width:$max;
+        width:$max - 12%;
+        text-align: center;
+        margin: auto;
+        margin-top:$medida-xl;
+        background:$color-terciario;
+        border-radius:$medida-xxp $medida-lg;
+        background:url(../multimedia/Imagenes/image-fondo.webp);
+
+        @media (min-width:$tablet){
+            border-radius: $medida-xxp 150px;
+        }
+
+        @media (min-width:$desktop){
+            width:900px;
+            font-size: $font-size-md;
+            border-radius: $medida-xxp 200px;
+        }
+
     h2{
         justify-content: center;
         font-size:1.9rem;
         padding:$medida-sm;
         color:$color-primario;
         display:inline-block;
-        border-radius:5px 70px 1px 70px;
-        margin-top: 2rem;
+        border-radius:$medida-xxp 70px 1px 70px;
+        margin-top: $font-size-sml;
         background: rgba(113, 111, 111, 0.402);
+
+        @media (min-width:$tablet){
+            font-size:$font-size-md;
+        }
+
+        @media (min-width:$tabletXG){
+            font-size:$font-size-sm + $font-size-md;
+        }
     }
+
     label{
         color: $color-white;
         font-size: $font-size-sm;
         margin: $font-size-sm;
+
+        @media (min-width:$tabletXG){
+            font-size:$font-size-sm + $font-size-ep;
+        }
     }
+
     input ,textarea{
         background:$color-white;
         color:$color-terciario;
         width:50%;
         border-radius:$medida-ep;
+
+        @media (min-width:$tablet){
+            width: 40%;
+        }
     }
     .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
         font-size:1.2rem;
         margin-top:$medida-epl;
         padding: auto;
+
+        @media (min-width:$tabletXG){
+            font-size: 1.3rem;
+        }
     }
     #Enviar{
-        background:$color-primario;
+        background:rgba(20, 187, 225, 0.799);
         color:$color-white;
         font-size:$font-size-sm + .3rem;
-        @include wid-hei(90px ,$medida-sm);
+        @include wid-hei(90px ,auto);
         @include mar-pad($medida-sm ,auto);
         border-color:$color-white;
 
-        &:hover{
-            cursor: pointer;
-            color:$color-grey;
-            font-weight: 700;
-            background:$btn-hover;
-            transition: .5s;
-        }
-    }
-
-    @media (min-width:$tablet){
-        border-radius: 5px 150px;
-    
-    input,textarea{
-        width: 40%;
-    }
-}
-@media (min-width:$tabletXG) {
-    h2{
-        font-size:$font-size-md;
-    }
-}
-    @media (min-width:$desktop){
-        width:900px;
-        font-size: $font-size-md;
-        border-radius: 5px 200px;
-        
-        .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
-            font-size: 1.3rem;
-        }
-        h2{
-            font-size:$font-size-sm + $font-size-md;
-        }
-        label{
-            font-size:$font-size-sm + $font-size-ep;
-        }
+            &:hover{
+                cursor: pointer;
+                font-weight: 700;
+                background:rgb(0, 247, 255);
+                transition: .5s;
+                width: 95px;
+            }
     }
 }
 
 .contactanos{
     img{
-    display: block;
-    margin: auto;
-    width:$max;
-    border-radius: 15px;
-    max-width:$max;
-    max-height: 500px;
-    }
+        display: block;
+        margin: auto;
+        width:$max;
+        border-radius:$medida-xxp + $medida-ep;
+        max-width:$max;
+        max-height: 500px;
 
+        @media (min-width:$desktopXG){
+            width:1585px;
+        }
+    }
+    
     h1{
-    padding-top:$medida-xl;
-    font-size:$font-size-md;
-    @include dispay-justify-center;
-    margin-bottom: 0;
-    color: $color-primario;
-    }
+        padding-top:$medida-xl;
+        font-size:$font-size-md;
+        @include dispay-justify-center;
+        margin-bottom: $min;
+        color: $color-primario;
 
-    h2{
-        text-align: center;
-        background:rgba(5, 5, 5, 0.173);
-        font-size: $font-size-sm + .4rem;
-        padding:$medida-ep;
-    }
-    h3{
-        text-align: center;
-        background:rgba(5, 5, 5, 0.173);
-        padding: 5px;
-        font-size:$font-size-sm;
-    }
-    @media (min-width:$tablet){
-        h1{
+        @media (min-width:$tablet){
             font-size: $font-size-md;
         }
-        h2{
-            font-size:2rem;
-        }
-        h3{
-            font-size:$font-size-sm + $font-size-ep;
-        }
-    }
-
-    @media (min-width:$desktop) {
-        h1{
+        
+        @media (min-width:$desktop){
             font-size:$font-size-xl;
         }
     }
 
-    @media (min-width:$desktopXG) {
-    
-        img{
-            width: 85%;
+    h2{
+        text-align: center;
+        background:rgba(5, 5, 5, 0.652);
+        font-size: $font-size-sm + .4rem;
+        padding:$medida-ep;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sml;
+        }
+    }
+    h3{
+        text-align: center;
+        background:rgba(5, 5, 5, 0.361);
+        padding: $medida-xxp;
+        font-size:$font-size-sm;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sm + $font-size-ep;
         }
     }
 }
