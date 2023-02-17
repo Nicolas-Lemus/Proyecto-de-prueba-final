@@ -1,3 +1,9 @@
+/*Medidas para pantallas*/
+$tablet:576px;
+$tabletXG:768px;
+$desktop:992px;
+$desktopXG:1200px;
+
 /*Colores*/
 $color-primario:rgb(184, 165, 55);
 $color-terciario:rgb(0, 0, 0);
@@ -53,9 +59,3 @@ $min:0;
     margin: $margen;
     padding: $relleno;
 }
-
-/*Medidas para pantallas*/
-$tablet:576px;
-$tabletXG:768px;
-$desktop:992px;
-$desktopXG:1200px;

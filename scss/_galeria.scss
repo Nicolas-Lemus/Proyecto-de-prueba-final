@@ -95,16 +95,12 @@
 }
 
 .galeria__videos{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     gap:$medida-ep * 2;
 
     iframe{
-        @include dispay-justify-center;
-        flex-direction:column;
         max-width:$max;
-        flex-wrap: wrap;
         background: none;
         height:auto;
         width:$medida-md * 5;

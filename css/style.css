@@ -1,3 +1,4 @@
+/*Medidas para pantallas*/
 /*Colores*/
 /*Colores rgba*/
 /*Medidas en px*/
@@ -6,7 +7,6 @@
 /*Mixins*/
 /*Sin parametros*/
 /*Con parametros*/
-/*Medidas para pantallas*/
 * {
   margin: 0;
   padding: 0;
@@ -291,7 +291,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 @media (min-width: 992px) {
   .encabezado h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 }
 .encabezado h2 {
@@ -304,7 +304,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 @media (min-width: 992px) {
   .encabezado h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -361,7 +361,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .card p {
   font-size: 1rem;
-  font-size: 1.2rem;
   background: rgba(229, 223, 223, 0.405);
   color: rgb(0, 0, 0);
 }
@@ -558,11 +557,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   gap: 20px;
 }
 .galeria__videos iframe {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   max-width: 100%;
-  flex-wrap: wrap;
   background: none;
   height: auto;
   width: 250px;
@@ -577,6 +572,59 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   .galeria__videos iframe {
     width: 1000px;
     height: 700px;
+  }
+}
+
+.contactanos img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+  max-width: 100%;
+  max-height: 500px;
+}
+@media (min-width: 1200px) {
+  .contactanos img {
+    width: 1585px;
+  }
+}
+.contactanos h1 {
+  padding-top: 130px;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: rgb(184, 165, 55);
+}
+@media (min-width: 576px) {
+  .contactanos h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .contactanos h1 {
+    font-size: 8rem;
+  }
+}
+.contactanos h2 {
+  text-align: center;
+  background: rgba(5, 5, 5, 0.652);
+  font-size: 1.4rem;
+  padding: 10px;
+}
+@media (min-width: 576px) {
+  .contactanos h2 {
+    font-size: 2rem;
+  }
+}
+.contactanos h3 {
+  text-align: center;
+  background: rgba(5, 5, 5, 0.361);
+  padding: 5px;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contactanos h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -615,8 +663,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   max-width: 100%;
   width: 88%;
   text-align: center;
-  margin: auto;
-  margin-top: 130px;
+  margin: 130px auto;
   border: solid 6px rgb(0, 0, 0);
   background: rgba(229, 229, 203, 0.799);
   border-radius: 10px;
@@ -684,74 +731,22 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 .formulario #Enviar {
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  width: 90px;
-  height: auto;
-  margin: 30px;
-  padding: auto;
+  font-size: 1rem;
+  width: auto;
   border-color: rgb(255, 255, 255);
 }
-.formulario #Enviar:hover {
-  cursor: pointer;
-  font-weight: 700;
-  background: rgb(122, 118, 118);
-  transition: 0.5s;
-  width: 95px;
-  color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
-}
-
-.contactanos img {
-  display: block;
-  margin: auto;
-  width: 100%;
-  border-radius: 15px;
-  max-width: 100%;
-  max-height: 500px;
-}
-@media (min-width: 1200px) {
-  .contactanos img {
-    width: 1585px;
-  }
-}
-.contactanos h1 {
-  padding-top: 130px;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-  color: rgb(184, 165, 55);
-}
-@media (min-width: 576px) {
-  .contactanos h1 {
-    font-size: 3rem;
-  }
-}
 @media (min-width: 992px) {
-  .contactanos h1 {
-    font-size: 8rem;
-  }
-}
-.contactanos h2 {
-  text-align: center;
-  background: rgba(5, 5, 5, 0.652);
-  font-size: 1.4rem;
-  padding: 10px;
-}
-@media (min-width: 576px) {
-  .contactanos h2 {
-    font-size: 2rem;
-  }
-}
-.contactanos h3 {
-  text-align: center;
-  background: rgba(5, 5, 5, 0.361);
-  padding: 5px;
-  font-size: 1rem;
-}
-@media (min-width: 576px) {
-  .contactanos h3 {
+  .formulario #Enviar {
     font-size: 1.5rem;
+  }
+  .formulario #Enviar:hover {
+    cursor: pointer;
+    font-weight: 700;
+    background: rgb(122, 118, 118);
+    transition: 0.5s;
+    width: 95px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
   }
 }
 

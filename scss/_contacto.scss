@@ -1,5 +1,56 @@
-.accordion{
+.contactanos{
+    img{
+        display: block;
+        margin: auto;
+        width:$max;
+        border-radius:$medida-xxp + $medida-ep;
+        max-width:$max;
+        max-height: 500px;
 
+        @media (min-width:$desktopXG){
+            width:1585px;
+        }
+    }
+    
+    h1{
+        padding-top:$medida-xl;
+        font-size:$font-size-md;
+        text-align: center;
+        margin-bottom: $min;
+        color: $color-primario;
+
+        @media (min-width:$tablet){
+            font-size: $font-size-md;
+        }
+        
+        @media (min-width:$desktop){
+            font-size:$font-size-xl;
+        }
+    }
+
+    h2{
+        text-align: center;
+        background:rgba(5, 5, 5, 0.652);
+        font-size: $font-size-sm + .4rem;
+        padding:$medida-ep;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sml;
+        }
+    }
+    h3{
+        text-align: center;
+        background:rgba(5, 5, 5, 0.361);
+        padding: $medida-xxp;
+        font-size:$font-size-sm;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sm + $font-size-ep;
+        }
+    }
+}
+
+.accordion{
     .accordion-button{
         background: $color-enlaces;
         color: $color-terciario;
@@ -32,12 +83,12 @@
         }
     } 
 }
+
 .formulario{
         max-width:$max;
         width:$max - 12%;
         text-align: center;
-        margin: auto;
-        margin-top:$medida-xl;
+        margin:$medida-xl auto;
         border: solid 6px $color-terciario;
         background: $color-enlaces;
         border-radius:$medida-ep;
@@ -103,11 +154,12 @@
     #Enviar{
         background:$color-terciario;
         color:$color-white;
-        font-size:$font-size-sm + $font-size-ep;
-        @include wid-hei(90px ,auto);
-        @include mar-pad($medida-sm ,auto);
+        font-size:$font-size-sm;
+        width: auto;
         border-color:$color-white;
 
+        @media (min-width:$desktop){
+            font-size:$font-size-sm+ $font-size-ep;
             &:hover{
                 cursor: pointer;
                 font-weight: 700;
@@ -117,57 +169,6 @@
                 color:$color-terciario;
                 border-color: $color-terciario;
             }
-    }
-}
-
-.contactanos{
-    img{
-        display: block;
-        margin: auto;
-        width:$max;
-        border-radius:$medida-xxp + $medida-ep;
-        max-width:$max;
-        max-height: 500px;
-
-        @media (min-width:$desktopXG){
-            width:1585px;
-        }
-    }
-    
-    h1{
-        padding-top:$medida-xl;
-        font-size:$font-size-md;
-        @include dispay-justify-center;
-        margin-bottom: $min;
-        color: $color-primario;
-
-        @media (min-width:$tablet){
-            font-size: $font-size-md;
-        }
-        
-        @media (min-width:$desktop){
-            font-size:$font-size-xl;
-        }
-    }
-
-    h2{
-        text-align: center;
-        background:rgba(5, 5, 5, 0.652);
-        font-size: $font-size-sm + .4rem;
-        padding:$medida-ep;
-
-        @media (min-width:$tablet){
-            font-size:$font-size-sml;
-        }
-    }
-    h3{
-        text-align: center;
-        background:rgba(5, 5, 5, 0.361);
-        padding: $medida-xxp;
-        font-size:$font-size-sm;
-
-        @media (min-width:$tablet){
-            font-size:$font-size-sm + $font-size-ep;
-        }
+        } 
     }
 }
